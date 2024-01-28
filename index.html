@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnivize</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="content">
+      <h1>Learnivize</h1>
+      <form id="learning-form">
+        <label for="subject">What do you want to learn?</label>
+        <input type="text" id="subject" name="subject" required />
+        <button type="submit">Next</button>
+      </form>
+      <div id="learning-method" style="display: none">
+        <p>How do you prefer to learn?</p>
+        <button id="textbook">Textbook</button>
+        <button id="videos">Videos</button>
+        <button id="podcasts">Podcasts</button>
+      </div>
+      <div id="difficulty-level" style="display: none">
+        <p>Choose your difficulty level:</p>
+        <button id="beginner">Beginner</button>
+        <button id="intermediate">Intermediate</button>
+        <button id="advanced">Advanced</button>
+      </div>
+      <!-- Language Selection Section -->
+      <div id="language-selection" style="display: none">
+        <p>Select your preferred language:</p>
+        <button id="english">English</button>
+        <button id="spanish">Spanish</button>
+        <button id="french">French</button>
+        <!-- Add more buttons for other languages as needed -->
+      </div>
+      <div id="results" style="display: none"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
