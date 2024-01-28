@@ -1,4 +1,4 @@
-//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
+
 const express = require("express");
 const { OpenAI } = require("openai");
 const app = express();
@@ -7,7 +7,7 @@ const port = 3000;
 const openai = new OpenAI({
   apiKey:
     process.env.OPENAI_API_KEY ||
-    "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",
+    "api key",
 });
 
 app.use(express.static(__dirname));
